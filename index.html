@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Text&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./src/style/output.css" rel="stylesheet" />
+    <link rel="icon" href="./src/icon/favicon.png" type="image/png">
+</head>
+<body class="bg-verde-800 font-sans mb-96">
+    <div class="container mt-4 flex justify-center md:justify-start">
+        <div class="inline-flex items-center rounded-md bg-verde-900">
+            <span class="size-2 bg-verde-300 bloc rounded-full relative -left-1"></span>
+            <div class="flex text-verde-300 divide-x-2 divide-verde-800 *:px-4 *:py-2">
+                <div class="" id="dia">Segunda</div>
+                <div id="temperatura">25°</div>
+                <div id="tempo">🌤️</div>
+            </div> 
+       </div>
+    </div>
+
+    <header class="container flex justify-between gap-8 py-8 items-center">
+        <a href="./">
+            <img src="./src/assets/img/forest.svg" alt="Forest Logo">
+        </a>
+        <nav>
+            <ul class="text-white text-xl flex flex-wrap gap-8 *:hover:underline *:underline-offset-8">
+                <li><a href="#acomodacoes">Acomodações</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#experiencias">Experiências</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="relative px-8 pb-8 pt-12 sm:pt-64 text-white rounded-2xl overflow-hidden bg-gradient-to-t from-verde-950/80">
+            <img class="absolute inset-0 size-full object-cover -z-10" src="./src/assets/img/floresta.jpg" alt="cover">
+            <div class="bg-verde-950 inline-flex items-center py-1 pr-1 rounded-full pl-4 gap-8 mb-8">
+                Vagas para dezembro abertas
+                <a class="bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full" href="">Reserve Hoje ></a>
+            </div>
+            <h1 class="font-serif text-balance max-w-screen-sm text-5xl mb-20">Venha Experimentar a Vida na Floresta</h1>
+            <div class="text-sm flex justify-between items-center">
+                <p>Melhores locais para visitar
+                    <a class="underline decoration-2 underline-offset-4 hover:no-underline" href="">2026</a>
+                </p>
+                <div>
+                    <p class="uppercase mb-2">Recomendado por</p>
+                    <p class="flex items-center gap-4">
+                        <img class="w-28" src="./src/assets/img/parceiros/wildbeast.svg" alt="Wildbeast">
+                    <span>|</span>
+                    Revista Nacional
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
