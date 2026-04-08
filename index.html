@@ -40,15 +40,15 @@
     </header>
 
     <main class="container">
-        <div class="relative px-8 pb-8 pt-12 sm:pt-64 text-white rounded-2xl overflow-hidden bg-gradient-to-t from-verde-950/80">
+        <div class="relative px-8 pb-8 pt-12 sm:pt-64 text-white rounded-2xl overflow-hidden bg-gradient-to-t from-verde-950/80 max-sm:px-4">
             <img class="absolute inset-0 size-full object-cover -z-10" src="./src/assets/img/floresta.jpg" alt="cover">
-            <div class="bg-verde-950 inline-flex items-center py-1 pr-1 rounded-full pl-4 gap-8 mb-8">
+            <div class="bg-verde-950/60  flex flex-col items-start gap-2 p-4 mb-8 rounded-xl sm:bg-verde-950 sm:flex-row sm:inline-flex sm:items-center sm:py-1 sm:pr-1 sm:rounded-full sm:pl-4 sm:gap-8">
                 Vagas para dezembro abertas
                 <a class="bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full" href="">Reserve Hoje ></a>
             </div>
-            <h1 class="font-serif text-balance max-w-screen-sm text-5xl mb-20">Venha Experimentar a Vida na Floresta</h1>
-            <div class="text-sm flex justify-between items-center">
-                <p>Melhores locais para visitar
+            <h1 class="mb-8 font-serif text-balance max-w-screen-sm text-4xl sm:mb-20 sm:text-5xl">Venha Experimentar a Vida na Floresta</h1>
+            <div class="text-sm sm:flex justify-between items-center">
+                <p class="max-sm:mb-4">Melhores locais para visitar
                     <a class="underline decoration-2 underline-offset-4 hover:no-underline" href="">2026</a>
                 </p>
                 <div>
@@ -63,5 +63,32 @@
             </div>
         </div>
     </main>
+
+    <section id="acomodacoes" class="container grid lg:grid-cols-[2fr_3fr] gap-8 pt-16 mb-12 sm:mb-16">
+        <div class="content-end bg-[image:var(--background-padrao)] bg-no-repeat bg-contain bg-bottom-left">
+            <h2 class="text-white mb-8 text-4xl font-serif lg:text-5xl">Refúgio Natural</h2>
+            <ul class="grid gap-4 text-gray-200 *:flex *:items-center *:gap-4 sm:text-xl">
+                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Experimente a natureza de perto</li>
+                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Conecte-se com a natureza</li>
+                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Desconecte-se do digital</li>
+                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Observe a vida selvagem</li>
+                <li><span class="h-0.5 w-6 bg-verde-400 inline-block"></span>Escolha a sua cabine preferida</li>
+            </ul>
+        </div>
+        <div class="grid grid-cols-[2fr_1fr] gap-4 sm:gap-8">
+            <div class="col-span-full grid *:col-start-1 *:row-start-1">
+                <img class="h-52 w-full object-cover rounded-xl" src="./src/assets/img/casa1.jpg" alt="Casa 1">
+                <span class="m-2 self-start justify-self-end uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none">Ruby</span>
+            </div>
+            <div class="grid *:col-start-1 *:row-start-1">
+                <img class="size-full object-cover rounded-xl" src="./src/assets/img/casa2.jpg" alt="Casa 2">
+                <span class="m-2 self-start justify-self-end uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none">Emerald</span>
+            </div>
+            <div class="grid *:col-start-1 *:row-start-1">
+                <img class="size-full object-cover rounded-xl" src="./src/assets/img/casa3.jpg" alt="Casa 3">
+                <span class="m-2 self-start justify-self-end uppercase text-white rounded-full bg-verde-950/60 px-4 py-2 text-sm/none">Sapphire</span>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

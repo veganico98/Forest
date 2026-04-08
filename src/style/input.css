@@ -11,6 +11,7 @@
   --color-verde-800: #16281F;
   --color-verde-900: #0F1C15;
   --color-verde-950: #030504;
+  --background-padrao: url('/src/assets/img/padrao.svg');
 }
 
 @utility container {
